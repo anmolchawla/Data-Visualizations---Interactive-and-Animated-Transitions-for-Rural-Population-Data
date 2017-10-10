@@ -1,13 +1,13 @@
 # INF 554 Assignment 8
 
 ## Description 
-Use the countries of Assignment 1. Load the data in JSON and implement a D3 bar chart complete with axes, tick marks and labels. Implement smooth transitions based on user input to reorder the bars: show all bars in alphabetic order (default), ascending order, descending order, top 5, bottom 5. Update the axes and legend interactively as needed.
+Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, tick marks, and labels. Implement smooth transitions based on user input to reorder the bars: show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. Update the axes and legend as needed as the chart transitions.
 
-Demonstrate good development practices in README.md (explain set-up, deployment, AND use incremental commits). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
+Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
 
 __GIT good practice__
 
-To demonstrate good practice of GIT, do **not** commit your files to GIT after you are done with the whole presentation. Commit in a small chunk of work. For example, start with an outline and then commit, work on a few slides and then commit, make some changes and then commit, etc.
+To demonstrate good practice of GIT, do **not** commit your files to GIT after you are done with the whole assignment. Use incremental commits i.e. commit in a small chunk of work. For example, start with a simple bar chart and then commit, work on adding one transition and then commit, add more transitions and then commit, etc.
 
 ## Rubric
 
@@ -40,7 +40,7 @@ $ ssh <username>@aludra.usc.edu  # <username> is your USC username as it appears
 $ mkdir public_html  # automatically mapped by Apache to http://www-scf.usc.edu/~username
 # you will get an error in previous step if that directory already exists
 $ cd public_html  # navigate inside public_html directory
-$ cat > a6.html  # paste what follows into a6.html; when done pasting, type Ctrl+D to send EOF to close the file
+$ cat > a8.html  # paste what follows into a8.html; when done pasting, type Ctrl+D to send EOF to close the file
 <html>
    <head>
        <title>HTML Page Template</title>
@@ -54,7 +54,7 @@ $ cd ..  # navigate outside public_html directory
 $ chmod -R 755 public_html  # make readable by www user for Apache to access 
 ```
 
-You should be able to see the page by going to: `http://www-scf.usc.edu/~<username>/a6.html`
+You should be able to see the page by going to: `http://www-scf.usc.edu/~<username>/a8.html`
 
 ### References
 * https://itservices.usc.edu/scf/
