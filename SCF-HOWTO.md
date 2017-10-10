@@ -1,4 +1,4 @@
-# Student Computing Facility
+# Student computing facility how-to
 
 All USC students are eligible to access UNIX computing resources at `aludra.usc.edu` and `nunki.usc.edu` using their Student Computing Facility (SCF) accounts.
 See the [SCF](https://itservices.usc.edu/scf/) page for more details.
@@ -21,12 +21,12 @@ You can connect to `aludra.usc.edu` in one of several ways:
 
 ### SSH Example
 
+In the following `<username>` is your USC username as it appears in your USC email address. For a list of basic Unix commands refer to 
 ```
-$ ssh <username>@aludra.usc.edu  # <username> is your USC username as it appears in your USC email address
-$ mkdir public_html  # automatically mapped by Apache to http://www-scf.usc.edu/~username
-# you will get an error in previous step if that directory already exists
-$ cd public_html  # navigate inside public_html directory
-$ cat > index.html  # paste what follows into a8.html; when done pasting, type Ctrl+D to send EOF to close the file
+$ ssh <username>@aludra.usc.edu
+$ mkdir public_html
+$ cd public_html  # enter public_html directory
+$ cat > index.html  # paste what follows, type Ctrl+D when done
 <html>
    <head>
        <title>HTML Page Template</title>
@@ -37,12 +37,14 @@ $ cat > index.html  # paste what follows into a8.html; when done pasting, type C
 </html>
 
 ```
-You may need to make files readable by `www` user for `Apache` webserver to access:
+To make files readable by `www` user for `Apache` webserver to access execute:
 ```
 $ chmod -R 755 ~/public_html  
 ```
 
-You should be able to see the page at: `http://www-scf.usc.edu/~<username>/`
+`public_html` will be accessible at: 
+
+```http://www-scf.usc.edu/~<username>/```
 
 ## References
 - [ITS SCF](https://itservices.usc.edu/scf/)

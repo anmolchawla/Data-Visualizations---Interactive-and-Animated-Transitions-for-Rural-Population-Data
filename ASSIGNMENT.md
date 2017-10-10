@@ -3,7 +3,11 @@
 ## Description 
 Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input to filter (show all data, show the top 5, show the bottom 5) and reorder (sort alphabetically (default), sort by value in ascending order, sort by value in descending order) the data.
 
-Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`. Use incremental commits to make some changes and commit snapshots of those changes into your repository each time the project reaches a state you want to record; e.g., setting-up d3, setting-up margin conventions, loading the data and so on. A good practice is to commit consistent changes that can be easily described with words and that have been tested.
+Demonstrate good development practices: 
+- Document set-up & deployment in [README.md](README.md)
+- Use incremental commits that are consistent and tested.
+
+Publish on your USC SCF account see [SCF-HOWTO.md](SCF-HOWTO.md) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
 
 ## Rubric
 
