@@ -1,7 +1,7 @@
 # INF 554 Assignment 8
 
 ## Description 
-Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, tick marks, tick mark labels, axes labels and title. Implement smooth transitions based on user input to reorder the bars: show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. Update the axes and  as needed as the chart transitions.
+Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, tick marks, tick mark labels, axes labels and title. Implement smooth transitions based on user input to reorder the bars: show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. Update the axes and  as needed as the chart transitions. Describe the data and cite your source in a8.html.
 
 Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
 
@@ -11,11 +11,11 @@ To demonstrate good practice of GIT, do **not** commit your files to GIT after y
 
 ## Rubric
 
-| 	             | Bar chart	    | Smooth Transitions |
-| ------------- | --------------- | ------------------ |
-| Sophisticated | Is well formatted, uses D3 data join, data is well formatted, imported as JSON, axes, axes labels, tick marks, tick mark labels and title are well formatted, using scales appropriately (4-5 pts) |  |  |
-| Competent	    |  |  |  |
-| Needs work	  |  |  |  |
+| 	             | Bar chart	    | Smooth Transitions | Development & Published Page |
+| ------------- | --------------- | ------------------ | ---------------------------- |
+| Sophisticated | Chart well formatted, uses D3 data join, data is well formatted, imported as JSON, axes, axes labels, tick marks, tick mark labels and title are well formatted, using scales appropriately, using margin conventions and encoding the data in multiple ways (e.g., using color, text in addition to height) (4-5 pts) | Smooth transitions based on user input to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are working in any order and allow to show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. (4-5 pts) | Use of GIT is demonstrated. Set-up and deployment are documented. Page is well formatted with a proper layout and explanatory text (4-5 pts) |
+| Competent	    | Chart is not be well formatted, improper uses D3 data join, data is not well formatted, data not well imported as JSON, axes, axes labels, tick marks, tick mark labels and title are not well formatted, not using scales appropriately, not using margin conventions appropriately and data not well encoded in multiple ways (e.g., using color, text in addition to height) (2-3 pts) | Smooth transitions on user input to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are not working well or not working in any order and/or show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5 not working well. (2-3 pts) | Use of GIT is not well demonstrated. Set-up and deployment are not well documented. Page is not well formatted and or not using proper layout and or no explanatory text is provided. (2-3 pts) |
+| Needs work	  | Chart not formatted properly, not using D3 data join, data not properly formatted, not imported as JSON, axes, axes labels, tick marks, tick mark labels and title are not formatted, not using scales appropriately, not using margin conventions and not encoding the data in multiple ways (e.g., using color, text in addition to height) (4-5 pts) | Smooth transitions not based on user input or to transitions to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are not working and not allowing to show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. | Use of GIT is not demonstrated. Set-up and deployment are not documented. Page is not formatted, not using proper layout, no explanatory text is provided. (0-1 pts) |
 
 ## USC SCF Publishing Instructions 
 
