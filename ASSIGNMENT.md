@@ -1,10 +1,10 @@
 # INF 554 Assignment 8
 
 ## Description 
-Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input to filter and reorder the data. User should be able to interact with the data in two ways (and any combination of choices should work):
+Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input. User should be able to interact with the data in two ways - filter and reorder (and any combination of user choices should work):
 
-- Filter -- e.g. show all data, show the top 5, show only developed countries, etc.
-- Reorder -- e.g. sort alphabetically, sort by value in ascending order, reorder randomly, etc.
+* Filter - e.g. show all data, show the top 5, show only tropical countries, etc.
+* Reorder - e.g. sort alphabetically, sort by value in ascending order, reorder randomly, etc.
 
 There should be at least three options in each of the above categories. As the chart transitions, do not forget to update the axes, buttons, chart title, etc. as needed.
 
