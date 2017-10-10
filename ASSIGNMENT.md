@@ -1,7 +1,12 @@
 # INF 554 Assignment 8
 
 ## Description 
-Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input to reorder the bars: show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. As the chart transitions, do not forget to update the axes, buttons, chart title, etc. as needed.
+Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input to filter and reorder the data. User should be able to interact with the data in two ways (and any combination of choices should work):
+
+- Filter -- e.g. show all data, show the top 5, show only developed countries, etc.
+- Reorder -- e.g. sort alphabetically, sort by value in ascending order, reorder randomly, etc.
+
+There should be at least three options in each of the above categories. As the chart transitions, do not forget to update the axes, buttons, chart title, etc. as needed.
 
 Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
 
