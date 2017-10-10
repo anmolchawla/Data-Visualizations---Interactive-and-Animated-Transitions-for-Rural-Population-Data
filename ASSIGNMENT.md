@@ -1,18 +1,9 @@
 # INF 554 Assignment 8
 
 ## Description 
-Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input. User should be able to interact with the data in two ways - filter and reorder (and any combination of user choices should work):
+Use the countries of Assignment 1. Load the data in JSON format and implement a D3 bar chart complete with axes, axes labels, tick marks, tick mark labels, legend, and title. Implement smooth transitions based on user input to filter (show all data, show the top 5, show the bottom 5) and reorder (sort alphabetically (default), sort by value in ascending order, sort by value in descending order) the data.
 
-* Filter - e.g. show all data, show the top 5, show the bottom 5, etc.
-* Reorder - e.g. sort alphabetically, sort by value in ascending order, sort by value in descending order, etc.
-
-There should be at least three options in each of the above categories. As the chart transitions, do not forget to update the axes, buttons, chart title, etc. as needed.
-
-Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`.
-
-__GIT good practice__
-
-To demonstrate good practice of GIT, do **not** commit your files to GIT after you are done with the whole assignment. Use incremental commits i.e. commit in a small chunk of work. For example, start with a simple bar chart and then commit, work on adding one transition and then commit, add more transitions and then commit, etc.
+Demonstrate good development practices in README.md (explain set-up & deployment). Publish on your USC SCF account ([see instructions below](#usc-scf-publishing-instructions)) and add a link to the **published** `a8.html` in `README.md`. All files, including `a8.html` should be stored in the repository. Describe the data and cite your source in `a8.html`. Use incremental commits to make some changes and commit snapshots of those changes into your repository each time the project reaches a state you want to record; e.g., setting-up d3, setting-up margin conventions, loading the data and so on. A good practice is to commit consistent changes that can be easily described with words and that have been tested.
 
 ## Rubric
 
@@ -21,52 +12,6 @@ To demonstrate good practice of GIT, do **not** commit your files to GIT after y
 | Sophisticated | Chart well formatted, uses D3 data join, data is well formatted, imported as JSON, axes, axes labels, tick marks, tick mark labels and title are well formatted, using scales appropriately, using margin conventions and encoding the data in multiple ways (e.g., using color, text in addition to height) and well documented. (4-5 pts) | Smooth transitions based on user input to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are working in any order and allow to show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. (4-5 pts) | Use of GIT is demonstrated. Set-up and deployment are documented. Page is well formatted with a proper layout and explanatory text (4-5 pts) |
 | Competent	    | Chart is not be well formatted, improper uses D3 data join, data is not well formatted, data not well imported as JSON, axes, axes labels, tick marks, tick mark labels and title are not well formatted, not using scales appropriately, not using margin conventions appropriately and data not well encoded in multiple ways (e.g., using color, text in addition to height), not well documented (2-3 pts) | Smooth transitions on user input to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are not working well or not working in any order and/or show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5 not working well. (2-3 pts) | Use of GIT is not well demonstrated. Set-up and deployment are not well documented. Page is not well formatted and or not using proper layout and or no explanatory text is provided. (2-3 pts) |
 | Needs work	  | Chart not formatted properly, not using D3 data join, data not properly formatted, not imported as JSON, axes, axes labels, tick marks, tick mark labels and title are not formatted, not using scales appropriately, not using margin conventions and not encoding the data in multiple ways (e.g., using color, text in addition to height), not documented. (0-1 pts) | Smooth transitions not based on user input or to transitions to reorder the bars and updates of axes, axes labels, tick marks, tick mark labels and title are not working and not allowing to show all bars in alphabetic order (default), ascending order, descending order, show only top 5, show only bottom 5. (0-1 pts) | Use of GIT is not demonstrated. Set-up and deployment are not documented. Page is not formatted, not using proper layout, no explanatory text is provided. (0-1 pts) |
-
-## USC SCF Publishing Instructions 
-
-All USC students are eligible for UNIX Computing Accounts for Students (SCF) accounts. Students that need to access USC UNIX resources may do so using their Student Computing Facility (SCF) accounts. Located at `aludra.usc.edu` and `nunki.usc.edu`, these two servers act as time-sharing hosts for all student accounts. See the [SCF](https://itservices.usc.edu/scf/) page for more details.
-
-You can publish your work in one of several ways:
-
-- Remote login using [SSH](https://itservices.usc.edu/ssh) from a Unix-compatible terminal (On Windows, use [Putty](http://www.putty.org), also available on the [ITS software pages](https://itservices.usc.edu/software/)).
-- Connect with [SFTP](https://itservices.usc.edu/sftp) (secure FTP) using a client such as [Filezilla](https://filezilla-project.org). ***Recommended for beginners***
-- Use [MobaXterm](http://mobaxterm.mobatek.net/) (support both SSH and SFTP). 
-
-There are three main steps no matter which software you use:
-
-1. Make `public_html` directory (folder) if it does NOT exist
-2. Copy your files into `public_html`.
-3. Make `public_html` folder and files publicly readable. Check the page is accessible on your browser.
-
-__SSH Example__
-
-```
-$ ssh <username>@aludra.usc.edu  # <username> is your USC username as it appears in your USC email address
-$ mkdir public_html  # automatically mapped by Apache to http://www-scf.usc.edu/~username
-# you will get an error in previous step if that directory already exists
-$ cd public_html  # navigate inside public_html directory
-$ cat > a8.html  # paste what follows into a8.html; when done pasting, type Ctrl+D to send EOF to close the file
-<html>
-   <head>
-       <title>HTML Page Template</title>
-   </head>
-   <body>
-       Hello!
-   </body>
-</html>
-$ cat > <filename>  # repeat previous step for other files
-$ cd ..  # navigate outside public_html directory
-$ chmod -R 755 public_html  # make readable by www user for Apache to access 
-```
-
-You should be able to see the page by going to: `http://www-scf.usc.edu/~<username>/a8.html`
-
-### References
-* https://itservices.usc.edu/scf/
-* https://www.youtube.com/watch?v=yfDDw4v0bzY
-* http://www.putty.org
-* https://filezilla-project.org
-* http://mobaxterm.mobatek.net/
 
 ## Homework Guidelines
 - Homework repository must be updated before the start of next class
