@@ -1,0 +1,73 @@
+body {
+    background-color: #F8F8FF;
+}
+
+
+#sort{ 
+    margin-left: 445px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: red;
+}
+
+#alp{ 
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+
+#asc{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+#desc{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+
+
+#filter{ 
+    margin-left: 445px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: red;
+}
+
+#all{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+
+#tp{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+
+#bt{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: green;
+}
+
+
+}
+
+/*#CAE1FF*/
