@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>World Percentage Rural Population </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<script src="https://d3js.org/d3.v5.min.js"></script>
 	</head>
 
@@ -32,26 +33,30 @@ The aim is to use D3 to visualize data and to understand how the mentioned count
 
 <br>
 <br>
+<center>
+<button class="btn btn-secondary" id="filter">Filter By Value</button>
+<button type="button" id="all" class="btn btn-primary" onclick="reset_countries();">Reset</button>
+<button type="button" id="ten" class="btn btn-primary" onclick="top_10();">All 10</button>
+<button type="button" id="tp" class="btn btn-primary" onclick="top_5();">Top 5</button>
+<button type="button" id="bt" class="btn btn-primary" onclick="down_5();">Bottom 5</button>
 
-<button  id="filter">Filter By Value</button>
-<button type="button" id="all" class="btn" onclick="reset_countries();">Reset/All Countries</button>
-<button type="button" id="tp" class="btn" onclick="top_5();">Top 5</button>
-<button type="button" id="bt" class="btn" onclick="down_5();">Bottom 5</button>
 
 
-
-<button  id="sort">Sort By</button>
-<button type="button" id="alp" class="btn" onclick="reset_alpha();">Reset/Alphabetically</button>
-<button type="button" id="asc" class="btn" onclick="ascen();">Value Ascending</button>
-<button type="button" id="desc" class="btn"onclick="descen();">Value Descending</button>
+<button  class="btn btn-secondary" id="sort">Sort By</button>
+<button type="button" id="alp" class="btn btn-primary" onclick="reset_alpha();">Alphabetically</button>
+<button type="button" id="asc" class="btn btn-primary" onclick="ascen();">Value Ascending</button>
+<button type="button" id="desc" class="btn btn-primary"onclick="descen();">Value Descending</button>
 
 <br>
 <br>
 </center>
+
 <center>
 <svg id="bar" width="1000px" height="600px" style="background: lightgrey" >	
 </svg>
 </center>
+<br>
+<br>
 
 
 

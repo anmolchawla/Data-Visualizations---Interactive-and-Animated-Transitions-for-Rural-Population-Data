@@ -4,7 +4,8 @@ var temp;
 var x;
 var barc;
 var dekhta;
-var dekhta1;
+var y;
+var dekhta1 = 2;
 
 function compare(a,b) {
   if (a.Country_Name < b.Country_Name)
@@ -15,38 +16,71 @@ function compare(a,b) {
 }
 
 function reset_countries(){
-holder = temp;
+holder = temp.map(x=>x);
 console.log(holder)
 update(holder);
+dekhta1 = 2;
 
+}
+
+
+function top_10(){
+
+holder = temp.map(x=>x);
+
+if (dekhta1 == 2)
+	holder.sort(compare);
+else if (dekhta1 == 0)
+	holder.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+else
+	holder.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+
+console.log(holder)
+update(holder);
 }
 
 function top_5(){
-const top = holder.map(x => x);
-top.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
-top.splice(5,5);
-console.log(top)
-update(top);
+holder = temp.map(x => x);
+holder.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+holder.splice(5,5);
+if (dekhta1 == 2)
+	holder.sort(compare);
+else if (dekhta1 == 0)
+	holder.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+else
+	holder.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+
+console.log(holder)
+update(holder);
 }
 
 function down_5(){
-var down = holder.map(x=>x);
-down.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
-down.splice(5,5);
-console.log(down)
-update(down);
+holder = temp.map(x => x);
+holder.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+holder.splice(5,5);
+if (dekhta1 == 2)
+	holder.sort(compare);
+else if (dekhta1 == 0)
+	holder.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+else
+	holder.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
+
+console.log(holder)
+update(holder);
 }
 
 function reset_alpha(){
 holder.sort(compare);
 console.log(holder);
 update(holder);
+dekhta1 = 2;
 }
 
 function ascen(){
 holder.sort(function(x,y){return d3.ascending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
 console.log(holder);
 update(holder);
+dekhta1 = 1;
 }
 
 
@@ -54,6 +88,7 @@ function descen(){
 holder.sort(function(x,y){return d3.descending(x.Percentage_Rural_Population_2017,y.Percentage_Rural_Population_2017);});
 console.log(holder);
 update(holder);
+dekhta1 = 0;
 }
 
 
@@ -82,7 +117,7 @@ dekhta.attr("transform","translate(70," + 560 + ")")
 	.call(d3.axisBottom(x))
 
 
-var y = d3.scaleLinear()
+y = d3.scaleLinear()
 		.range([560,20]);
 
 y.domain([0,d3.max(data, function(d) {return d.Percentage_Rural_Population_2017;}) ]);
@@ -115,7 +150,7 @@ barc.append("text")
 
 barc.append("text")
 		.attr("x",412)
-		.attr("y",30)
+		.attr("y",15)
 		.text("2017 % Rurual Population")
 	
 
@@ -124,23 +159,43 @@ return ;
 
 
 function update(just){
-	var next = barc.selectAll("rect")
-	next.enter().data(just)
 
 	x.domain(just.map(function(d){return d.Country_Name;}));
+	var next = barc.selectAll("rect").data(just, function(d) {
+		return d.Country_Name;
+	});
+
+
+
+    	
+    next.transition()
+	    .duration(3000)
+	    .attr('x',function(d) { return (x(d.Country_Name)+55); })
     
+    next.exit()
+    	.transition()
+    	.delay(1000)
+    	.style("opacity",0)
+    	.remove();
 
+    next.enter()
+		//.data(just)
+		.append("rect")
+        .attr('x', function(d) { return (x(d.Country_Name)+55); })
+	    .attr('y', function (d) { return (600 - (600 - y(d.Percentage_Rural_Population_2017))); })
+	    .attr('width', function (d) { return [30]; })
+	    .attr('height', function (d) { return (560 - y(d.Percentage_Rural_Population_2017)); })
+	    .attr("fill",'#1F77B4')
+		.transition()
+		.delay(1000)
+		.attr('x',function(d) { return (x(d.Country_Name)+55); })
 
-       next.transition()
-    	   .duration(3000)
-		   .attr('x',function(d) { return (x(d.Country_Name)+55); })
 
 	dekhta.transition()
 		.duration(3000)
 		.attr("transform","translate(70," + 560 + ")")
 		.call(d3.axisBottom(x))
 
-	//next.exit().remove();
 
 		
 }

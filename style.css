@@ -4,19 +4,19 @@ body {
 
 
 #sort{ 
-    margin-left: 445px;
+    margin-left: 10px;
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: red;
+    color: white;
 }
 
 #alp{ 
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 
 #asc{ 
@@ -24,23 +24,31 @@ body {
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 #desc{ 
     margin-left: 10px;
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 
 
 #filter{ 
-    margin-left: 445px;
+    margin-left: 100px;
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: red;
+    color: white;
+}
+
+#ten{ 
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 45px;   
+    color: white;
 }
 
 #all{ 
@@ -48,7 +56,7 @@ body {
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 
 #tp{ 
@@ -56,7 +64,7 @@ body {
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 
 #bt{ 
@@ -64,10 +72,8 @@ body {
     margin-top: 0px;
     width: 200px;
     height: 45px;   
-    color: green;
+    color: white;
 }
 
 
 }
-
-/*#CAE1FF*/

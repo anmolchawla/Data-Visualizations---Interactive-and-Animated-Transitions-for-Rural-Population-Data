@@ -3,10 +3,10 @@
 {"Country_Name": "France",	     "Percentage_Rural_Population_2017":19.82},
 {"Country_Name":"India",	     "Percentage_Rural_Population_2017":66.4},
 {"Country_Name":"Portugal",      "Percentage_Rural_Population_2017":35.348},
+{"Country_Name":"Spain",	     "Percentage_Rural_Population_2017":19.92},
+{"Country_Name":"Srilanka",	     "Percentage_Rural_Population_2017":81.616},
 {"Country_Name":"Sweden",	     "Percentage_Rural_Population_2017":12.854},
 {"Country_Name":"Switzerland",	 "Percentage_Rural_Population_2017":26.239},
 {"Country_Name":"U.K",	         "Percentage_Rural_Population_2017":16.857},
-{"Country_Name":"U.S",	         "Percentage_Rural_Population_2017":17.942},
-{"Country_Name":"Srilanka",	     "Percentage_Rural_Population_2017":81.616},
-{"Country_Name":"Spain",	     "Percentage_Rural_Population_2017":19.92}
+{"Country_Name":"U.S",	         "Percentage_Rural_Population_2017":17.942}
 ]
