@@ -1,0 +1,27 @@
+{
+  "name": "a7-anmolchawla",
+  "version": "1.0.0",
+  "description": "ThE data was taken from world data (http://databank.worldbank.org/data/reports.aspx?source=2&series=SP.RUR.TOTL.ZS&country=#). The countries were taken from assignment 1 and the metric was taken for the year of 2017  for percentage rural population of that country.",
+  "main": "shapes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INF554Fall18/a7-anmolchawla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INF554Fall18/a7-anmolchawla/issues"
+  },
+  "homepage": "https://github.com/INF554Fall18/a7-anmolchawla#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "d3": "^5.7.0",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {}
+}
