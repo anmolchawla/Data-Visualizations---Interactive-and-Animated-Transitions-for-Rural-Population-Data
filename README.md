@@ -22,7 +22,7 @@ A normal SVG bar graph was created as done in previous assignment. Later on D3.j
 2. Exit to remove redundant and delete data. 
 3. Update to transition from one data point to another. 
 
-Bootstrap was referred via it's CSS CDN. Buttons were stylized to have an aesthetic look. 
+Bootstrap was referred via it's CSS and Popper Js node modules installed via npm. Buttons were stylized to have an aesthetic look. 
 
 Later on the the webpage was hosted at (http://www-scf.usc.edu/~anmolcha/itp104/a7/a7.html).
 
